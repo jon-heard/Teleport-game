@@ -8,6 +8,11 @@ public class Trigger : Thing
 	
 	public override void OnInteract()
 	{
+		DoTrigger();
+	}
+
+	public void DoTrigger()
+	{
 		foreach (Thing ToTriggerItem in ToTrigger)
 		{
 			ToTriggerItem.OnTrigger(this);
