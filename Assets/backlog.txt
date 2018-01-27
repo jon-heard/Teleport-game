@@ -1,9 +1,11 @@
+	- Figure out how to do atlas textures
 	- add bbsprite to system
 	- make demo
-	- make inventory system with numbers to activate
 
 	- make use/take/talk require proximity
 	- turn to face during use/take/talk
 	- disable movement during use/take/talk
+
+	- inventory
 
 	- make simple npc dialog system (back and forth)

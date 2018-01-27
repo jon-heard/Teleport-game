@@ -9,7 +9,6 @@ public enum InteractionMode
 
 public class GameState : MonoBehaviour
 {
-	public Pc CurrentPc;
 	[HideInInspector]
 	public InteractionMode CurrentInteractionMode = InteractionMode.IN_GAME;
 	[HideInInspector]

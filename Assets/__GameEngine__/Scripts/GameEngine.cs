@@ -24,19 +24,18 @@ public class GameEngine : MonoBehaviour
 
 	// Singleton-ness
 	static public GameEngine Instance { get; private set; }
-
 	public void Awake()
 	{
 		Instance = this;
-		_lookText = Tooltip.transform.GetChild(0).GetChild(0).GetComponent<Text>();
-		_lookTextTransform = _lookText.GetComponent<RectTransform>();
-		_lookBackgroundTransform = _lookText.transform.parent.GetComponent<RectTransform>();
-		_lookOutlineransform = _lookBackgroundTransform.transform.parent.GetComponent<RectTransform>();
 	}
 
 	public void Start()
 	{
 		_gamestate = GameState.Instance;
+		_lookText = Tooltip.transform.GetChild(0).GetChild(0).GetComponent<Text>();
+		_lookTextTransform = _lookText.GetComponent<RectTransform>();
+		_lookBackgroundTransform = _lookText.transform.parent.GetComponent<RectTransform>();
+		_lookOutlineransform = _lookBackgroundTransform.transform.parent.GetComponent<RectTransform>();
 	}
 
 	public void Update()
@@ -113,7 +112,14 @@ public class GameEngine : MonoBehaviour
 				}
 				if (Input.GetMouseButtonUp(0) && _gamestate.InteractingFocus != null)
 				{
-					_gamestate.InteractingFocus.OnInteract();
+					if (InventoryManager.Instance.CurrentItemIndex == InventoryManager.EMPTY_ITEM_INDEX)
+					{
+						_gamestate.InteractingFocus.OnInteract();
+					}
+					else
+					{
+						_gamestate.InteractingFocus.OnInventoryInteract(InventoryManager.Instance.CurrentItem);
+					}
 					_gamestate.InteractingFocus = null;
 				}
 				if (_gamestate.InteractingFocus != _gamestate.CurrentFocus)

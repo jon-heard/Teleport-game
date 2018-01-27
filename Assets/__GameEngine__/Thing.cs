@@ -25,4 +25,6 @@ public class Thing : MonoBehaviour
 	}
 
 	public virtual void OnInteract() {}
+	public virtual void OnInventoryInteract(Takeable other) {}
+	public virtual void OnTrigger(Trigger source) {}
 }

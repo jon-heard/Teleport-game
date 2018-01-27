@@ -56,11 +56,14 @@
      <Compile Include="Assets\__GameEngine__\Scripts\GameEngine.cs" />
      <Compile Include="Assets\__GameEngine__\Scripts\GameState.cs" />
      <Compile Include="Assets\__GameEngine__\Scripts\GroundedChecker.cs" />
+     <Compile Include="Assets\__GameEngine__\Scripts\InventoryManager.cs" />
      <Compile Include="Assets\__GameEngine__\Scripts\ParticleLife.cs" />
-     <Compile Include="Assets\__GameEngine__\Scripts\Pc.cs" />
      <Compile Include="Assets\__GameEngine__\Scripts\Ui.cs" />
+     <Compile Include="Assets\__GameEngine__\Scripts\VolumeManager.cs" />
+     <Compile Include="Assets\__GameEngine__\Takeable.cs" />
+     <Compile Include="Assets\__GameEngine__\Talkable.cs" />
      <Compile Include="Assets\__GameEngine__\Thing.cs" />
-     <Compile Include="Assets\Scenes\Main\Scripts\Can.cs" />
+     <Compile Include="Assets\__GameEngine__\Trigger.cs" />
      <Compile Include="Assets\Scenes\Main\Scripts\Jukebox.cs" />
      <Compile Include="Assets\Scenes\Main\Scripts\Npc.cs" />
      <None Include="Assets\backlog.txt" />
