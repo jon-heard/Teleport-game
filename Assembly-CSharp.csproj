@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{AE57ABCD-4CE2-3F07-5CA2-2B499E03C992}</ProjectGuid>
+    <ProjectGuid>{39B0FBC5-9CD1-97B4-B681-B8E732229823}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -51,23 +51,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\FpLook.cs" />
-     <Compile Include="Assets\Scripts\FpMove.cs" />
-     <Compile Include="Assets\Scripts\GameState.cs" />
-     <Compile Include="Assets\Scripts\GroundedChecker.cs" />
-     <Compile Include="Assets\Scripts\ParticleLife.cs" />
-     <Compile Include="Assets\Scripts\Pc.cs" />
-     <Compile Include="Assets\Scripts\Things\Thing.cs" />
-     <Compile Include="Assets\Scripts\Things\Usable\CurrentInventory.cs" />
-     <Compile Include="Assets\Scripts\Things\Usable\Inventory.cs" />
-     <Compile Include="Assets\Scripts\Things\Usable\Look.cs" />
-     <Compile Include="Assets\Scripts\Things\Usable\Take.cs" />
-     <Compile Include="Assets\Scripts\Things\Usable\Takeable\Can.cs" />
-     <Compile Include="Assets\Scripts\Things\Usable\Takeable\Gun.cs" />
-     <Compile Include="Assets\Scripts\Things\Usable\Talk.cs" />
-     <Compile Include="Assets\Scripts\Things\Usable\Usable.cs" />
-     <Compile Include="Assets\Scripts\Things\Usable\Use.cs" />
-     <Compile Include="Assets\Scripts\Ui.cs" />
+     <Compile Include="Assets\__GameEngine__\Scripts\FpLook.cs" />
+     <Compile Include="Assets\__GameEngine__\Scripts\FpMove.cs" />
+     <Compile Include="Assets\__GameEngine__\Scripts\GameEngine.cs" />
+     <Compile Include="Assets\__GameEngine__\Scripts\GameState.cs" />
+     <Compile Include="Assets\__GameEngine__\Scripts\GroundedChecker.cs" />
+     <Compile Include="Assets\__GameEngine__\Scripts\ParticleLife.cs" />
+     <Compile Include="Assets\__GameEngine__\Scripts\Pc.cs" />
+     <Compile Include="Assets\__GameEngine__\Scripts\Ui.cs" />
+     <Compile Include="Assets\__GameEngine__\Thing.cs" />
+     <Compile Include="Assets\Scenes\Main\Scripts\Can.cs" />
+     <Compile Include="Assets\Scenes\Main\Scripts\Jukebox.cs" />
+     <Compile Include="Assets\Scenes\Main\Scripts\Npc.cs" />
      <None Include="Assets\backlog.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>

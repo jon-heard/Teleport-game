@@ -1,8 +1,9 @@
-- unducking with something above your head forces non-unduck
-- noninstant unducking
-- Setup a ui for internal to select inventory items (on side to see scene)
-- have internal mouse over scenery show tooltip with description of what look at
-	- highlight what is being looked at (make it super colorful?)
-	- can use texture to determine description (default for walls, etc)
-- Setup a seperate gun
-- rotation of rigidbody is choppy
+	- add bbsprite to system
+	- make demo
+	- make inventory system with numbers to activate
+
+	- make use/take/talk require proximity
+	- turn to face during use/take/talk
+	- disable movement during use/take/talk
+
+	- make simple npc dialog system (back and forth)
