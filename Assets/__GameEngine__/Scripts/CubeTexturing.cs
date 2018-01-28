@@ -5,8 +5,6 @@ using UnityEngine;
 [ExecuteInEditMode]
 public class CubeTexturing : MonoBehaviour
 {
-	public bool LiveTextureRefresh = false;
-
 	public Vector2 FrontUpper_Left = new Vector2(0.0f, 0.0f);
 	public Vector2 FrontLower_Right = new Vector2(1.0f, 1.0f);
 	public Vector2 BackUpper_Left = new Vector2(0.0f, 0.0f);
@@ -27,7 +25,7 @@ public class CubeTexturing : MonoBehaviour
 
 	public void Update()
 	{
-		if (LiveTextureRefresh)
+		if (CubeTexturingEditorWindow.ToEdit == this)
 		{
 			RefreshTexturing();
 		}

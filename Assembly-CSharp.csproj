@@ -52,6 +52,8 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\__GameEngine__\Scripts\CubeTexturing.cs" />
+     <Compile Include="Assets\__GameEngine__\Scripts\CubeTexturingEditor.cs" />
+     <Compile Include="Assets\__GameEngine__\Scripts\CubeTexturingEditorWindow.cs" />
      <Compile Include="Assets\__GameEngine__\Scripts\FpLook.cs" />
      <Compile Include="Assets\__GameEngine__\Scripts\FpMove.cs" />
      <Compile Include="Assets\__GameEngine__\Scripts\GameEngine.cs" />

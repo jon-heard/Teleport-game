@@ -15,6 +15,7 @@ public class GameEngine : MonoBehaviour
 	public Texture2D Cursor_Interacting;
 	public Texture2D Cursor_Look;
 	public GameObject Tooltip;
+	public List<string> IntroNarration;
 
 	private GameState _gamestate;
 	private Text _lookText;
@@ -36,6 +37,15 @@ public class GameEngine : MonoBehaviour
 		_lookTextTransform = _lookText.GetComponent<RectTransform>();
 		_lookBackgroundTransform = _lookText.transform.parent.GetComponent<RectTransform>();
 		_lookOutlineransform = _lookBackgroundTransform.transform.parent.GetComponent<RectTransform>();
+		Tooltip.SetActive(false);
+		//RunNarration(IntroNarration);
+	}
+
+	public void RunNarration(List<string> narration)
+	{
+		//_gamestate.CurrentInteractionMode = InteractionMode.NARRATION;
+		_gamestate.NarrationIndex = 0;
+		_gamestate.Narration = narration;
 	}
 
 	public void Update()
@@ -143,6 +153,12 @@ public class GameEngine : MonoBehaviour
 				Tooltip.SetActive(false);
 			}
 		}
+
+		// Handle narrative
+//		if (_gamestate.CurrentInteractionMode == InteractionMode.NARRATION)
+		{
+			
+		}
 	}
 
 	public void OnGUI()
@@ -172,16 +188,6 @@ public class GameEngine : MonoBehaviour
 	public void MenuSave()
 	{
 		Debug.Log("Menu save");
-	}
-
-	public void MenuVolumeUp()
-	{
-		Debug.Log("Menu volume up");
-	}
-
-	public void MenuVolumeDown()
-	{
-		Debug.Log("Menu volume down");
 	}
 
 	public void MenuExit()
